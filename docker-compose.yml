@@ -12,8 +12,7 @@ services:
     restart: unless-stopped
   # Database
   mariadb:
-    build:
-      context: ./mariadb
+    image: mariadb
     volumes:
       - mariadb_data:/var/lib/mysql
     ports:
