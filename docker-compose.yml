@@ -20,6 +20,7 @@ services:
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
       MYSQL_ROOT_PASSWORD: 'ChangeMe!FIXME'
+      MYSQL_INITDB_SKIP_TZINFO: 1
     networks:
       - localSite
     restart: unless-stopped
